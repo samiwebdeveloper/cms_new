@@ -17,6 +17,7 @@ class Website_home extends CI_Controller
 	{
 		
 		$data['fetch_slider'] = $this->Slider_Model->fetch('nqash_cms.tblsliders');
+		$data['fetch_project'] = $this->Slider_Model->fetch('nqash_cms.tblprojects');
 		$data['fetch_contact'] = $this->Event_Model->fetch_contact('nqash_cms.tblcontact');
 		$this->load->view('index',$data);
 	}

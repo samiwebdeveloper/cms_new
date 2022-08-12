@@ -58,6 +58,25 @@
     .owl-carousel.dots-light .owl-dots .owl-dot:hover span {
         background: var(--danger) !important;
     }
+
+    .btn-close {
+        box-sizing: content-box;
+        width: 1.5em;
+        height: 1.5em;
+
+        border: 0px;
+        border-radius: 0.25rem;
+        opacity: 0.5;
+        position: absolute;
+        top: 22px;
+        right: 20px;
+        border-radius: 37%;
+    }
+
+    .btn-close:hover {
+        border: 5px solid white;
+
+    }
 </style>
 
 <body data-plugin-scroll-spy data-plugin-options="{'target': '.wrapper-spy'}">
@@ -721,7 +740,7 @@
                                 <div id="portfolioLoadMoreWrapper" class="row image-gallery sort-destination lightbox" data-sort-id="portfolio" data-total-pages="3" data-ajax-url="ajax/demo-one-page-agency-ajax-load-more-" data-plugin-options="{'delegate': 'a.lightbox-portfolio', 'type': 'image', 'gallery': {'enabled': true}}" style="height: 49.55vw;">
                                     <div class="isotope-item col-sm-6 col-lg-3 website p-0">
                                         <div class="image-gallery-item mb-0">
-                                            <a href="img/projects/project.jpg" class="lightbox-portfolio">
+                                            <a href="<?php echo base_url(); ?>assets/website_assets/img/projects/project.jpg" class="lightbox-portfolio">
                                                 <span class="thumb-info thumb-info-centered-info thumb-info-no-borders custom-thumb-info-style-1">
                                                     <span class="thumb-info-wrapper">
                                                         <img src="<?php echo base_url(); ?>assets/website_assets/img/projects/project.jpg" class="img-fluid" alt="">
@@ -736,7 +755,7 @@
                                     </div>
                                     <div class="isotope-item col-sm-6 col-lg-3 brands p-0">
                                         <div class="image-gallery-item mb-0">
-                                            <a href="img/projects/project-3.jpg" class="lightbox-portfolio">
+                                            <a href="<?php echo base_url(); ?>assets/website_assets/img/projects/project-3.jpg" class="lightbox-portfolio">
                                                 <span class="thumb-info thumb-info-centered-info thumb-info-no-borders custom-thumb-info-style-1">
                                                     <span class="thumb-info-wrapper">
                                                         <img src="<?php echo base_url(); ?>assets/website_assets/img/projects/project-3.jpg" class="img-fluid" alt="">
@@ -751,7 +770,7 @@
                                     </div>
                                     <div class="isotope-item col-sm-6 col-lg-3 mobile-app p-0">
                                         <div class="image-gallery-item mb-0">
-                                            <a href="img/projects/project-4.jpg" class="lightbox-portfolio">
+                                            <a href="<?php echo base_url(); ?>assets/website_assets/img/projects/project-4.jpg" class="lightbox-portfolio">
                                                 <span class="thumb-info thumb-info-centered-info thumb-info-no-borders custom-thumb-info-style-1">
                                                     <span class="thumb-info-wrapper">
                                                         <img src="<?php echo base_url(); ?>assets/website_assets/img/projects/project-4.jpg" class="img-fluid" alt="">
@@ -766,7 +785,7 @@
                                     </div>
                                     <div class="isotope-item col-sm-6 col-lg-3 others p-0">
                                         <div class="image-gallery-item mb-0">
-                                            <a href="img/projects/project-5.jpg" class="lightbox-portfolio">
+                                            <a href="<?php echo base_url(); ?>assets/website_assets/img/projects/project-5.jpg" class="lightbox-portfolio">
                                                 <span class="thumb-info thumb-info-centered-info thumb-info-no-borders custom-thumb-info-style-1">
                                                     <span class="thumb-info-wrapper">
                                                         <img src="<?php echo base_url(); ?>assets/website_assets/img/projects/project-5.jpg" class="img-fluid" alt="">
@@ -781,7 +800,7 @@
                                     </div>
                                     <div class="isotope-item col-sm-6 col-lg-3 website p-0">
                                         <div class="image-gallery-item mb-0">
-                                            <a href="img/projects/project-6.jpg" class="lightbox-portfolio">
+                                            <a href="<?php echo base_url(); ?>assets/website_assets/img/projects/project-6.jpg" class="lightbox-portfolio">
                                                 <span class="thumb-info thumb-info-centered-info thumb-info-no-borders custom-thumb-info-style-1">
                                                     <span class="thumb-info-wrapper">
                                                         <img src="<?php echo base_url(); ?>assets/website_assets/img/projects/project-6.jpg" class="img-fluid" alt="">
@@ -796,7 +815,7 @@
                                     </div>
                                     <div class="isotope-item col-sm-6 col-lg-3 website p-0">
                                         <div class="image-gallery-item mb-0">
-                                            <a href="img/projects/project-25.jpg" class="lightbox-portfolio">
+                                            <a href="<?php echo base_url(); ?>assets/website_assets/img/projects/project-25.jpg" class="lightbox-portfolio">
                                                 <span class="thumb-info thumb-info-centered-info thumb-info-no-borders custom-thumb-info-style-1">
                                                     <span class="thumb-info-wrapper">
                                                         <img src="<?php echo base_url(); ?>assets/website_assets/img/projects/project-25.jpg" class="img-fluid" alt="">
@@ -811,7 +830,7 @@
                                     </div>
                                     <div class="isotope-item col-sm-6 col-lg-3 others p-0">
                                         <div class="image-gallery-item mb-0">
-                                            <a href="img/projects/project-7.jpg" class="lightbox-portfolio">
+                                            <a href="<?php echo base_url(); ?>assets/website_assets/img/projects/project-7.jpg" class="lightbox-portfolio">
                                                 <span class="thumb-info thumb-info-centered-info thumb-info-no-borders custom-thumb-info-style-1">
                                                     <span class="thumb-info-wrapper">
                                                         <img src="<?php echo base_url(); ?>assets/website_assets/img/projects/project-7.jpg" class="img-fluid" alt="">
@@ -826,7 +845,7 @@
                                     </div>
                                     <div class="isotope-item col-sm-6 col-lg-3 brands p-0">
                                         <div class="image-gallery-item mb-0">
-                                            <a href="img/projects/project-1.jpg" class="lightbox-portfolio">
+                                            <a href="<?php echo base_url(); ?>assets/website_assets/img/projects/project-1.jpg" class="lightbox-portfolio">
                                                 <span class="thumb-info thumb-info-centered-info thumb-info-no-borders custom-thumb-info-style-1">
                                                     <span class="thumb-info-wrapper">
                                                         <img src="<?php echo base_url(); ?>assets/website_assets/img/projects/project-1.jpg" class="img-fluid" alt="">
@@ -886,112 +905,24 @@
 
                     <div class="sort-destination-loader sort-destination-loader-showing mt-4 pt-2 pb-3 mb-3">
                         <div class="row portfolio-list sort-destination popup-gallery-ajax" data-sort-id="portfolio">
-
-
-                            <div class="col-sm-6 col-lg-3 isotope-item brands">
-                                <div class="portfolio-item">
-                                    <a href="<?php echo base_url(); ?>assets/website_assets/ajax/portfolio-ajax-project.html" data-ajax-on-modal>
-                                        <span class="thumb-info thumb-info-lighten border-radius-0">
-                                            <span class="thumb-info-wrapper border-radius-0">
-                                                <img src="<?php echo base_url(); ?>assets/website_assets/img/projects/project.jpg" class="img-fluid border-radius-0" alt="">
-                                                <span class="thumb-info-title">
-                                                    <span class="thumb-info-inner">Presentation</span>
-                                                    <span class="thumb-info-type">Brand</span>
-                                                </span>
-                                                <span class="thumb-info-action">
-                                                    <span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-lg-3 isotope-item medias">
-                                <div class="portfolio-item">
-                                    <a href="<?php echo base_url(); ?>assets/website_assets/ajax/portfolio-ajax-project-1.html" data-ajax-on-modal>
-                                        <span class="thumb-info thumb-info-lighten border-radius-0">
-                                            <span class="thumb-info-wrapper border-radius-0">
-                                                <span class="owl-carousel owl-theme dots-inside m-0" data-plugin-options="{'items': 1, 'margin': 20, 'animateOut': 'fadeOut', 'autoplay': true, 'autoplayTimeout': 3000}"><span><img src="<?php echo base_url(); ?>assets/website_assets/img/projects/project-1.jpg" class="img-fluid border-radius-0" alt=""></span><span><img src="<?php echo base_url(); ?>assets/website_assets/img/projects/project-1-2.jpg" class="img-fluid border-radius-0" alt=""></span></span>
-                                                <span class="thumb-info-title">
-                                                    <span class="thumb-info-inner">Porto Watch</span>
-                                                    <span class="thumb-info-type">Media</span>
-                                                </span>
-                                                <span class="thumb-info-action">
-                                                    <span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-lg-3 isotope-item logos">
-                                <div class="portfolio-item">
-                                    <a href="<?php echo base_url(); ?>assets/website_assets/ajax/portfolio-ajax-project-2.html" data-ajax-on-modal>
-                                        <span class="thumb-info thumb-info-lighten border-radius-0">
-                                            <span class="thumb-info-wrapper border-radius-0">
-                                                <img src="<?php echo base_url(); ?>assets/website_assets/img/projects/project-2.jpg" class="img-fluid border-radius-0" alt="">
-                                                <span class="thumb-info-title">
-                                                    <span class="thumb-info-inner">Identity</span>
-                                                    <span class="thumb-info-type">Logo</span>
-                                                </span>
-                                                <span class="thumb-info-action">
-                                                    <span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-lg-3 isotope-item websites">
-                                <div class="portfolio-item">
-                                    <a href="<?php echo base_url(); ?>assets/website_assets/ajax/portfolio-ajax-project-3.html" data-ajax-on-modal>
-                                        <span class="thumb-info thumb-info-lighten border-radius-0">
-                                            <span class="thumb-info-wrapper border-radius-0">
-                                                <img src="<?php echo base_url(); ?>assets/website_assets/img/projects/project-27.jpg" class="img-fluid border-radius-0" alt="">
-                                                <span class="thumb-info-title">
-                                                    <span class="thumb-info-inner">Porto Screens</span>
-                                                    <span class="thumb-info-type">Website</span>
-                                                </span>
-                                                <span class="thumb-info-action">
-                                                    <span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-lg-3 isotope-item logos">
-                                <div class="portfolio-item">
-                                    <a href="<?php echo base_url(); ?>assets/website_assets/ajax/portfolio-ajax-project-4.html" data-ajax-on-modal>
-                                        <span class="thumb-info thumb-info-lighten border-radius-0">
-                                            <span class="thumb-info-wrapper border-radius-0">
-                                                <img src="<?php echo base_url(); ?>assets/website_assets/img/projects/project-4.jpg" class="img-fluid border-radius-0" alt="">
-                                                <span class="thumb-info-title">
-                                                    <span class="thumb-info-inner">Three Bottles</span>
-                                                    <span class="thumb-info-type">Logo</span>
-                                                </span>
-                                                <span class="thumb-info-action">
-                                                    <span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
+                    <?php
+                     foreach ($fetch_project as $project) { 
+                        $ProjectId = $project->ProjectId;
+                        $Title = $project->Title;
+                        $Details = $project->Details;
+                        $OrganizationLogo = $project->OrganizationLogo;                     
+                     ?>
+                       
 
                             <div class="col-sm-6 col-lg-3 isotope-item brands">
                                 <div class="portfolio-item">
-                                    <a href="<?php echo base_url(); ?>assets/website_assets/ajax/portfolio-ajax-project-5.html" data-ajax-on-modal>
+                                    <a href="<?php echo base_url(); ?>product_detail" data-bs-toggle="modal" data-bs-target="#largeModal_<?php echo $ProjectId ?>">
                                         <span class="thumb-info thumb-info-lighten border-radius-0">
                                             <span class="thumb-info-wrapper border-radius-0">
-                                                <img src="<?php echo base_url(); ?>assets/website_assets/img/projects/project-5.jpg" class="img-fluid border-radius-0" alt="">
+                                                <img src="<?php echo base_url() ?>assets/projects_images/<?php echo $OrganizationLogo ?>" class="img-fluid border-radius-0" alt="">
                                                 <span class="thumb-info-title">
-                                                    <span class="thumb-info-inner">Company T-Shirt</span>
-                                                    <span class="thumb-info-type">Brand</span>
+                                                    <span class="thumb-info-inner"><?php echo $Title?></span>
+                                                    <span class="thumb-info-type"><?php echo "Type";?></span>
                                                 </span>
                                                 <span class="thumb-info-action">
                                                     <span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
@@ -1001,46 +932,58 @@
                                     </a>
                                 </div>
                             </div>
+                            <div class="modal fade" id="largeModal_<?php echo $ProjectId ?>" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        <div class="modal-header" style="background-color:#f7f7f7 !important ;">
+                                            <div class="container-fluid shadow-lg" style="background-color:white ;">
+                                                <div class="row align-items-center py-1 ">
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col-md-12 align-self-center p-static order-2 text-center">
+                                                                <div class="overflow-hidden pb-2">
+                                                                    <h2 class="text-dark font-weight-bold text-7 mb-0"><?php echo $Title?></h2>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row pb-4 ">
+                                                    <div class="col-sm-4 my-1">
+                                                        <!-- <hr class="solid my-5"> -->
+                                                        <strong class="text-uppercase text-1 me-3 text-dark float-start position-relative top-2">Share</strong>
+                                                        <ul class="social-icons">
+                                                            <li class="social-icons-facebook"><a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                                            <li class="social-icons-twitter"><a href="https://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                                            <li class="social-icons-linkedin"><a href="https://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                                                        </ul>
+                                                        <hr>
+                                                        <img style="height:85% !important ;" src="<?php echo base_url() ?>assets/projects_images/<?php echo $OrganizationLogo ?>" class="img-fluid" alt="">
 
-                            <div class="col-sm-6 col-lg-3 isotope-item websites">
-                                <div class="portfolio-item">
-                                    <a href="<?php echo base_url(); ?>assets/website_assets/ajax/portfolio-ajax-project-6.html" data-ajax-on-modal>
-                                        <span class="thumb-info thumb-info-lighten border-radius-0">
-                                            <span class="thumb-info-wrapper border-radius-0">
-                                                <img src="<?php echo base_url(); ?>assets/website_assets/img/projects/project-6.jpg" class="img-fluid border-radius-0" alt="">
-                                                <span class="thumb-info-title">
-                                                    <span class="thumb-info-inner">Mobile Mockup</span>
-                                                    <span class="thumb-info-type">Website</span>
-                                                </span>
-                                                <span class="thumb-info-action">
-                                                    <span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </a>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <h2 class="text-color-dark font-weight-normal text-4 mb-0">Project <strong class="font-weight-extra-bold">Description</strong></h2>
+
+                                                        <p><?php echo $Details?></p>
+                                                        <h2 class="text-color-dark font-weight-normal text-4 mb-0 mt-4">Project <strong class="font-weight-extra-bold">Details</strong></h2>
+                                                        <ul class="list list-icons list-primary list-borders text-2">
+                                                            <li><i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Client:</strong> Okler Themes</li>
+                                                            <li><i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Date:</strong> January 2022</li>
+                                                            <li><i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Skills:</strong> <a href="#" class="badge badge-dark badge-sm rounded-pill px-2 py-1 ms-1">DESIGN</a><a href="#" class="badge badge-dark badge-sm rounded-pill px-2 py-1 ms-1">BRAND</a><a href="#" class="badge badge-dark badge-sm rounded-pill px-2 py-1 ms-1">WEBSITES</a></li>
+                                                            <li><i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Project URL:</strong> <a href="#" target="_blank" class="text-dark">http://www.okler.net</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="col-sm-6 col-lg-3 isotope-item medias">
-                                <div class="portfolio-item">
-                                    <a href="<?php echo base_url(); ?>assets/website_assets/ajax/portfolio-ajax-project-7.html" data-ajax-on-modal>
-                                        <span class="thumb-info thumb-info-lighten border-radius-0">
-                                            <span class="thumb-info-wrapper border-radius-0">
-                                                <img src="<?php echo base_url(); ?>assets/website_assets/img/projects/project-7.jpg" class="img-fluid border-radius-0" alt="">
-                                                <span class="thumb-info-title">
-                                                    <span class="thumb-info-inner">Porto Label</span>
-                                                    <span class="thumb-info-type">Media</span>
-                                                </span>
-                                                <span class="thumb-info-action">
-                                                    <span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-
-
+                    <?php }?>
                         </div>
                     </div>
 
@@ -1523,18 +1466,31 @@
                     $Email = $add_info->Email;
                     $Address = $add_info->Address;
                     $Map = $add_info->Map;
-                  
-                }   ?>
+                }
+                if (isset($_POST['save'])) {
+                    $to =  $Email;
+                    $subject = "Customer Query";
+                    $message  = "<h2>Customer Query</h2>";
+                    $message .= "<p><b>Name: </b>"  . trim($_POST['name']) . "</p>";
+                    $message .= "<p><b>Email: </b>"  . trim($_POST['email']) . "</p>";
+                    $message .= "<p><b>Phone#: </b>"  . trim($_POST['phone']) . "</p>";
+                    $message .= "<p><b>Query: </b>" . trim($_POST['message']) . "</p>";
+                    $header = "From:" . $_POST['email'] . " \r\n";
+                    $header .= "MIME-Version: 1.0\r\n";
+                    $header .= "Content-type: text/html\r\n";
+                    $retval = mail($to, $subject, $message, $header);
+                }
+                ?>
                 <div style="height: 500px;" id="googlemaps" class="my-1 py-2">
-                    <iframe <?php echo  $Map;?> width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe <?php echo  $Map; ?> width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-              
+
                 <div class="container">
                     <div class="row py-4">
                         <div class="col-lg-6">
                             <h2 class="font-weight-bold text-8 mt-2 mb-0">Contact Us</h2>
                             <p class="mb-4">Feel free to ask for details, don't save any questions!</p>
-                            <form class="contact-form" action="https://www.okler.net/previews/porto/9.7.0/php/contact-form.php" method="POST">
+                            <form class="contact-form" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                                 <div class="contact-form-success alert alert-success d-none mt-4">
                                     <strong>Success!</strong> Your message has been sent to us.
                                 </div>
@@ -1548,14 +1504,14 @@
                                         <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control text-3 h-auto py-2" name="name" required>
                                     </div>
                                     <div class="form-group col-lg-6">
-                                        <label class="form-label mb-1 text-2">Email Address</label>
-                                        <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control text-3 h-auto py-2" name="email" required>
+                                        <label class="form-label mb-1 text-2">Phone</label>
+                                        <input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control text-3 h-auto py-2" name="phone" required>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group col">
-                                        <label class="form-label mb-1 text-2">Subject</label>
-                                        <input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control text-3 h-auto py-2" name="subject" required>
+                                        <label class="form-label mb-1 text-2">Email Address</label>
+                                        <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control text-3 h-auto py-2" name="email" required>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -1566,7 +1522,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="form-group col">
-                                        <input type="submit" value="Send Message" class="btn btn-primary btn-modern" data-loading-text="Loading...">
+                                        <input name="save" type="submit" value="Send Message" class="btn btn-primary btn-modern" data-loading-text="Loading...">
                                     </div>
                                 </div>
                             </form>
@@ -1577,9 +1533,9 @@
                             <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800">
                                 <h4 class="mt-2 mb-1">Our <strong>Office</strong></h4>
                                 <ul class="list list-icons list-icons-style-2 mt-2">
-                                    <li><i class="fas fa-map-marker-alt top-6"></i> <strong class="text-dark">Landline:</strong> <?php echo $LandLine?></li>
-                                    <li><i class="fas fa-phone top-6"></i> <strong class="text-dark">Phone:</strong> <a href="tel:<?php echo $Cell;?>"><span><?php echo $Cell;?></span></a></li>
-                                    <li><i class="fas fa-envelope top-6"></i> <strong class="text-dark">Email:</strong> <a href="mailto:<?php echo $Email;?>"><span><?php echo $Email;?></span></a></li>
+                                    <li><i class="fas fa-map-marker-alt top-6"></i> <strong class="text-dark">Landline:</strong> <?php echo $LandLine ?></li>
+                                    <li><i class="fas fa-phone top-6"></i> <strong class="text-dark">Phone:</strong> <a href="tel:<?php echo $Cell; ?>"><span><?php echo $Cell; ?></span></a></li>
+                                    <li><i class="fas fa-envelope top-6"></i> <strong class="text-dark">Email:</strong> <a href="mailto:<?php echo $Email; ?>"><span><?php echo $Email; ?></span></a></li>
                                 </ul>
                             </div>
 
@@ -1601,158 +1557,155 @@
 
                 </div>
 
-            </div>
-
+            </div </div>
 
         </div>
-
-    </div>
-    <footer id="footer" class="border-0 m-0 p-0">
-        <div class="footer-copyright bg-color-light py-1">
-            <div class="container">
-                <div class="row align-items-center justify-content-center justify-content-md-between">
-                    <div class="col-auto">
-                        <div class="d-flex align-items-center">
-                            <div class="d-none d-sm-inline-flex align-items-center border border-top-0 border-bottom-0 border-start-0 pe-4">
-                                <i class="far fa-clock text-4"></i>
-                                <span class="font-weight-medium mx-2"> Mon - Sat 9:00am - 6:00pm</span>
+        <footer id="footer" class="border-0 m-0 p-0">
+            <div class="footer-copyright bg-color-light py-1">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center justify-content-md-between">
+                        <div class="col-auto">
+                            <div class="d-flex align-items-center">
+                                <div class="d-none d-sm-inline-flex align-items-center border border-top-0 border-bottom-0 border-start-0 pe-4">
+                                    <i class="far fa-clock text-4"></i>
+                                    <span class="font-weight-medium mx-2"> Mon - Sat 9:00am - 6:00pm</span>
+                                </div>
+                                <ul class="social-icons social-icons-clean social-icons-medium ms-sm-4">
+                                    <li class="social-icons-facebook">
+                                        <a href="https://www.facebook.com/" class="text-color-quaternary" target="_blank" title="Facebook">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-icons-twitter">
+                                        <a href="https://www.twitter.com/" class="text-color-quaternary" target="_blank" title="Twitter">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-icons-linkedin">
+                                        <a href="https://www.linkedin.com/" class="text-color-quaternary" target="_blank" title="Linkedin">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                            <ul class="social-icons social-icons-clean social-icons-medium ms-sm-4">
-                                <li class="social-icons-facebook">
-                                    <a href="https://www.facebook.com/" class="text-color-quaternary" target="_blank" title="Facebook">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
+                        </div>
+                        <div class="col-auto">
+                            <p class="text-3-5">Copyright © 2022. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer id="footer">
+            <div class="container">
+                <div class="footer-ribbon">
+                    <span>Get in Touch</span>
+                </div>
+                <div class="row py-5 my-4">
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                        <h5 class="text-3 mb-3">NEWSLETTER</h5>
+                        <p class="pe-1">Keep up on our always evolving product features and technology. Enter your e-mail address and subscribe to our newsletter.</p>
+                        <div class="alert alert-success d-none" id="newsletterSuccess">
+                            <strong>Success!</strong> You've been added to our email list.
+                        </div>
+                        <div class="alert alert-danger d-none" id="newsletterError"></div>
+                        <form id="newsletterForm" action="https://www.okler.net/previews/porto/9.7.0/php/newsletter-subscribe.php" method="POST" class="me-4 mb-3 mb-md-0">
+                            <div class="input-group input-group-rounded">
+                                <input class="form-control form-control-sm bg-light" placeholder="Email Address" name="newsletterEmail" id="newsletterEmail" type="email">
+                                <button class="btn btn-light text-color-dark" type="submit"><strong>GO!</strong></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                        <h5 class="text-3 mb-3">LATEST TWEETS</h5>
+                        <div id="tweet" class="twitter" data-plugin-tweets data-plugin-options="{'username': 'oklerthemes', 'count': 2}">
+                            <p>Please wait...</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                        <div class="contact-details">
+                            <h5 class="text-3 mb-3">CONTACT US</h5>
+                            <ul class="list list-icons list-icons-lg">
+                                <li class="mb-1"><i class="far fa-dot-circle text-color-primary"></i>
+                                    <p class="m-0">234 Street Name, City Name</p>
                                 </li>
-                                <li class="social-icons-twitter">
-                                    <a href="https://www.twitter.com/" class="text-color-quaternary" target="_blank" title="Twitter">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
+                                <li class="mb-1"><i class="fab fa-whatsapp text-color-primary"></i>
+                                    <p class="m-0"><a href="tel:8001234567">(800) 123-4567</a></p>
                                 </li>
-                                <li class="social-icons-linkedin">
-                                    <a href="https://www.linkedin.com/" class="text-color-quaternary" target="_blank" title="Linkedin">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
+                                <li class="mb-1"><i class="far fa-envelope text-color-primary"></i>
+                                    <p class="m-0"><a href="https://www.okler.net/cdn-cgi/l/email-protection#660b070f0a26031e070b160a034805090b"><span class="__cf_email__" data-cfemail="3d505c54517d58455c504d5158135e5250">[email&#160;protected]</span></a></p>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-auto">
-                        <p class="text-3-5">Copyright © 2022. All Rights Reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <footer id="footer">
-        <div class="container">
-            <div class="footer-ribbon">
-                <span>Get in Touch</span>
-            </div>
-            <div class="row py-5 my-4">
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                    <h5 class="text-3 mb-3">NEWSLETTER</h5>
-                    <p class="pe-1">Keep up on our always evolving product features and technology. Enter your e-mail address and subscribe to our newsletter.</p>
-                    <div class="alert alert-success d-none" id="newsletterSuccess">
-                        <strong>Success!</strong> You've been added to our email list.
-                    </div>
-                    <div class="alert alert-danger d-none" id="newsletterError"></div>
-                    <form id="newsletterForm" action="https://www.okler.net/previews/porto/9.7.0/php/newsletter-subscribe.php" method="POST" class="me-4 mb-3 mb-md-0">
-                        <div class="input-group input-group-rounded">
-                            <input class="form-control form-control-sm bg-light" placeholder="Email Address" name="newsletterEmail" id="newsletterEmail" type="email">
-                            <button class="btn btn-light text-color-dark" type="submit"><strong>GO!</strong></button>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <h5 class="text-3 mb-3">LATEST TWEETS</h5>
-                    <div id="tweet" class="twitter" data-plugin-tweets data-plugin-options="{'username': 'oklerthemes', 'count': 2}">
-                        <p>Please wait...</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
-                    <div class="contact-details">
-                        <h5 class="text-3 mb-3">CONTACT US</h5>
-                        <ul class="list list-icons list-icons-lg">
-                            <li class="mb-1"><i class="far fa-dot-circle text-color-primary"></i>
-                                <p class="m-0">234 Street Name, City Name</p>
-                            </li>
-                            <li class="mb-1"><i class="fab fa-whatsapp text-color-primary"></i>
-                                <p class="m-0"><a href="tel:8001234567">(800) 123-4567</a></p>
-                            </li>
-                            <li class="mb-1"><i class="far fa-envelope text-color-primary"></i>
-                                <p class="m-0"><a href="https://www.okler.net/cdn-cgi/l/email-protection#660b070f0a26031e070b160a034805090b"><span class="__cf_email__" data-cfemail="3d505c54517d58455c504d5158135e5250">[email&#160;protected]</span></a></p>
-                            </li>
+                    <div class="col-md-6 col-lg-2">
+                        <h5 class="text-3 mb-3">FOLLOW US</h5>
+                        <ul class="social-icons">
+                            <li class="social-icons-facebook"><a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="social-icons-twitter"><a href="https://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li class="social-icons-linkedin"><a href="https://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-2">
-                    <h5 class="text-3 mb-3">FOLLOW US</h5>
-                    <ul class="social-icons">
-                        <li class="social-icons-facebook"><a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="social-icons-twitter"><a href="https://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                        <li class="social-icons-linkedin"><a href="https://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-                    </ul>
-                </div>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container py-2">
-                <div class="row py-4">
-                    <div class="col-lg-1 d-flex align-items-center justify-content-center justify-content-lg-start mb-2 mb-lg-0">
-                        <a href="index.html" class="logo pe-0 pe-lg-3">
-                            <img alt="Porto Website Template" src="<?php echo base_url(); ?>assets/website_assets/img/logo-footer.png" class="opacity-5" width="49" height="22" data-plugin-options="{'appearEffect': 'fadeIn'}">
-                        </a>
-                    </div>
-                    <div class="col-lg-7 d-flex align-items-center justify-content-center justify-content-lg-start mb-4 mb-lg-0">
-                        <p>© Copyright 2022. All Rights Reserved.</p>
-                    </div>
-                    <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end">
-                        <nav id="sub-menu">
-                            <ul>
-                                <li><i class="fas fa-angle-right"></i><a href="page-faq.html" class="ms-1 text-decoration-none"> FAQ's</a></li>
-                                <li><i class="fas fa-angle-right"></i><a href="sitemap.html" class="ms-1 text-decoration-none"> Sitemap</a></li>
-                                <li><i class="fas fa-angle-right"></i><a href="<?php echo base_url(); ?>assets/website_assets/contact-us.html" class="ms-1 text-decoration-none"> Contact Us</a></li>
-                            </ul>
-                        </nav>
+            <div class="footer-copyright">
+                <div class="container py-2">
+                    <div class="row py-4">
+                        <div class="col-lg-1 d-flex align-items-center justify-content-center justify-content-lg-start mb-2 mb-lg-0">
+                            <a href="index.html" class="logo pe-0 pe-lg-3">
+                                <img alt="Porto Website Template" src="<?php echo base_url(); ?>assets/website_assets/img/logo-footer.png" class="opacity-5" width="49" height="22" data-plugin-options="{'appearEffect': 'fadeIn'}">
+                            </a>
+                        </div>
+                        <div class="col-lg-7 d-flex align-items-center justify-content-center justify-content-lg-start mb-4 mb-lg-0">
+                            <p>© Copyright 2022. All Rights Reserved.</p>
+                        </div>
+                        <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end">
+                            <nav id="sub-menu">
+                                <ul>
+                                    <li><i class="fas fa-angle-right"></i><a href="page-faq.html" class="ms-1 text-decoration-none"> FAQ's</a></li>
+                                    <li><i class="fas fa-angle-right"></i><a href="sitemap.html" class="ms-1 text-decoration-none"> Sitemap</a></li>
+                                    <li><i class="fas fa-angle-right"></i><a href="<?php echo base_url(); ?>assets/website_assets/contact-us.html" class="ms-1 text-decoration-none"> Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
 
 
-    <!-- Vendor -->
-    <script src="<?php echo base_url(); ?>assets/website_assets/vendor/jquery/jquery.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/website_assets/vendor/jquery.appear/jquery.appear.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/website_assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/website_assets/vendor/jquery.cookie/jquery.cookie.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/website_assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/website_assets/vendor/jquery.validation/jquery.validate.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/website_assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/website_assets/vendor/jquery.gmap/jquery.gmap.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/website_assets/vendor/lazysizes/lazysizes.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/website_assets/vendor/isotope/jquery.isotope.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/website_assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/website_assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/website_assets/vendor/vide/jquery.vide.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/website_assets/vendor/vivus/vivus.min.js"></script>
+        <!-- Vendor -->
+        <script src="<?php echo base_url(); ?>assets/website_assets/vendor/jquery/jquery.min.js"></script>
+        <script src="<?php echo base_url(); ?>assets/website_assets/vendor/jquery.appear/jquery.appear.min.js"></script>
+        <script src="<?php echo base_url(); ?>assets/website_assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+        <script src="<?php echo base_url(); ?>assets/website_assets/vendor/jquery.cookie/jquery.cookie.min.js"></script>
+        <script src="<?php echo base_url(); ?>assets/website_assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="<?php echo base_url(); ?>assets/website_assets/vendor/jquery.validation/jquery.validate.min.js"></script>
+        <script src="<?php echo base_url(); ?>assets/website_assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+        <script src="<?php echo base_url(); ?>assets/website_assets/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+        <script src="<?php echo base_url(); ?>assets/website_assets/vendor/lazysizes/lazysizes.min.js"></script>
+        <script src="<?php echo base_url(); ?>assets/website_assets/vendor/isotope/jquery.isotope.min.js"></script>
+        <script src="<?php echo base_url(); ?>assets/website_assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+        <script src="<?php echo base_url(); ?>assets/website_assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="<?php echo base_url(); ?>assets/website_assets/vendor/vide/jquery.vide.min.js"></script>
+        <script src="<?php echo base_url(); ?>assets/website_assets/vendor/vivus/vivus.min.js"></script>
 
-    <!-- Theme Base, Components and Settings -->
-    <script src="<?php echo base_url(); ?>assets/website_assets/js/theme.js"></script>
+        <!-- Theme Base, Components and Settings -->
+        <script src="<?php echo base_url(); ?>assets/website_assets/js/theme.js"></script>
 
-    <!-- Current Page Vendor and Views -->
-    <script src="<?php echo base_url(); ?>assets/website_assets/js/views/view.contact.js"></script>
+        <!-- Current Page Vendor and Views -->
+        <script src="<?php echo base_url(); ?>assets/website_assets/js/views/view.contact.js"></script>
 
-    <!-- Demo -->
-    <script src="<?php echo base_url(); ?>assets/website_assets/js/demos/demo-one-page-agency.js"></script>
+        <!-- Demo -->
+        <script src="<?php echo base_url(); ?>assets/website_assets/js/demos/demo-one-page-agency.js"></script>
 
-    <!-- Theme Initialization Files -->
-    <script src="<?php echo base_url(); ?>assets/website_assets/js/theme.init.js"></script>
+        <!-- Theme Initialization Files -->
+        <script src="<?php echo base_url(); ?>assets/website_assets/js/theme.init.js"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhpYHdYRY2U6V_VfyyNtkPHhywLjDkhfg"></script>
-    <script>
-        /*
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhpYHdYRY2U6V_VfyyNtkPHhywLjDkhfg"></script>
+        <script>
+            /*
                                                                                                                                                                                                                                                                                                         			Map Settings
 
                                                                                                                                                                                                                                                                                                         				Find the Latitude and Longitude of your address:
@@ -1761,193 +1714,193 @@
 
                                                                                                                                                                                                                                                                                                         			*/
 
-        function initializeGoogleMaps() {
-            // Map Markers
-            var mapMarkers = [{
-                address: "New York, NY 10017",
-                html: "<strong>Porto One Page Agency</strong><br>New York, NY 10017",
-                icon: {
-                    image: "img/pin.png",
-                    iconsize: [26, 46],
-                    iconanchor: [12, 46]
-                },
-                popup: true
-            }];
+            function initializeGoogleMaps() {
+                // Map Markers
+                var mapMarkers = [{
+                    address: "New York, NY 10017",
+                    html: "<strong>Porto One Page Agency</strong><br>New York, NY 10017",
+                    icon: {
+                        image: "img/pin.png",
+                        iconsize: [26, 46],
+                        iconanchor: [12, 46]
+                    },
+                    popup: true
+                }];
 
-            // Map Initial Location
-            var initLatitude = 40.75198;
-            var initLongitude = -73.96978;
+                // Map Initial Location
+                var initLatitude = 40.75198;
+                var initLongitude = -73.96978;
 
-            // Map Extended Settings
-            var mapSettings = {
-                controls: {
-                    draggable: (($.browser.mobile) ? false : true),
-                    panControl: true,
-                    zoomControl: true,
-                    mapTypeControl: true,
-                    scaleControl: true,
-                    streetViewControl: true,
-                    overviewMapControl: true
-                },
-                scrollwheel: false,
-                markers: mapMarkers,
-                latitude: initLatitude,
-                longitude: initLongitude,
-                zoom: 16
-            };
+                // Map Extended Settings
+                var mapSettings = {
+                    controls: {
+                        draggable: (($.browser.mobile) ? false : true),
+                        panControl: true,
+                        zoomControl: true,
+                        mapTypeControl: true,
+                        scaleControl: true,
+                        streetViewControl: true,
+                        overviewMapControl: true
+                    },
+                    scrollwheel: false,
+                    markers: mapMarkers,
+                    latitude: initLatitude,
+                    longitude: initLongitude,
+                    zoom: 16
+                };
 
-            var map = $('#googlemaps').gMap(mapSettings),
-                mapRef = $('#googlemaps').data('gMap.reference');
+                var map = $('#googlemaps').gMap(mapSettings),
+                    mapRef = $('#googlemaps').data('gMap.reference');
 
-            // Styles from https://snazzymaps.com/
-            var styles = [{
-                "featureType": "water",
-                "elementType": "geometry",
-                "stylers": [{
-                    "color": "#e9e9e9"
+                // Styles from https://snazzymaps.com/
+                var styles = [{
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#e9e9e9"
+                    }, {
+                        "lightness": 17
+                    }]
                 }, {
-                    "lightness": 17
-                }]
-            }, {
-                "featureType": "landscape",
-                "elementType": "geometry",
-                "stylers": [{
-                    "color": "#f5f5f5"
+                    "featureType": "landscape",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#f5f5f5"
+                    }, {
+                        "lightness": 20
+                    }]
                 }, {
-                    "lightness": 20
-                }]
-            }, {
-                "featureType": "road.highway",
-                "elementType": "geometry.fill",
-                "stylers": [{
-                    "color": "#ffffff"
+                    "featureType": "road.highway",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#ffffff"
+                    }, {
+                        "lightness": 17
+                    }]
                 }, {
-                    "lightness": 17
-                }]
-            }, {
-                "featureType": "road.highway",
-                "elementType": "geometry.stroke",
-                "stylers": [{
-                    "color": "#ffffff"
+                    "featureType": "road.highway",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#ffffff"
+                    }, {
+                        "lightness": 29
+                    }, {
+                        "weight": 0.2
+                    }]
                 }, {
-                    "lightness": 29
+                    "featureType": "road.arterial",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#ffffff"
+                    }, {
+                        "lightness": 18
+                    }]
                 }, {
-                    "weight": 0.2
-                }]
-            }, {
-                "featureType": "road.arterial",
-                "elementType": "geometry",
-                "stylers": [{
-                    "color": "#ffffff"
+                    "featureType": "road.local",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#ffffff"
+                    }, {
+                        "lightness": 16
+                    }]
                 }, {
-                    "lightness": 18
-                }]
-            }, {
-                "featureType": "road.local",
-                "elementType": "geometry",
-                "stylers": [{
-                    "color": "#ffffff"
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#f5f5f5"
+                    }, {
+                        "lightness": 21
+                    }]
                 }, {
-                    "lightness": 16
-                }]
-            }, {
-                "featureType": "poi",
-                "elementType": "geometry",
-                "stylers": [{
-                    "color": "#f5f5f5"
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#dedede"
+                    }, {
+                        "lightness": 21
+                    }]
                 }, {
-                    "lightness": 21
-                }]
-            }, {
-                "featureType": "poi.park",
-                "elementType": "geometry",
-                "stylers": [{
-                    "color": "#dedede"
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "visibility": "on"
+                    }, {
+                        "color": "#ffffff"
+                    }, {
+                        "lightness": 16
+                    }]
                 }, {
-                    "lightness": 21
-                }]
-            }, {
-                "elementType": "labels.text.stroke",
-                "stylers": [{
-                    "visibility": "on"
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "saturation": 36
+                    }, {
+                        "color": "#333333"
+                    }, {
+                        "lightness": 40
+                    }]
                 }, {
-                    "color": "#ffffff"
+                    "elementType": "labels.icon",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
                 }, {
-                    "lightness": 16
-                }]
-            }, {
-                "elementType": "labels.text.fill",
-                "stylers": [{
-                    "saturation": 36
+                    "featureType": "transit",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#f2f2f2"
+                    }, {
+                        "lightness": 19
+                    }]
                 }, {
-                    "color": "#333333"
+                    "featureType": "administrative",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#fefefe"
+                    }, {
+                        "lightness": 20
+                    }]
                 }, {
-                    "lightness": 40
-                }]
-            }, {
-                "elementType": "labels.icon",
-                "stylers": [{
-                    "visibility": "off"
-                }]
-            }, {
-                "featureType": "transit",
-                "elementType": "geometry",
-                "stylers": [{
-                    "color": "#f2f2f2"
-                }, {
-                    "lightness": 19
-                }]
-            }, {
-                "featureType": "administrative",
-                "elementType": "geometry.fill",
-                "stylers": [{
-                    "color": "#fefefe"
-                }, {
-                    "lightness": 20
-                }]
-            }, {
-                "featureType": "administrative",
-                "elementType": "geometry.stroke",
-                "stylers": [{
-                    "color": "#fefefe"
-                }, {
-                    "lightness": 17
-                }, {
-                    "weight": 1.2
-                }]
-            }];
+                    "featureType": "administrative",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#fefefe"
+                    }, {
+                        "lightness": 17
+                    }, {
+                        "weight": 1.2
+                    }]
+                }];
 
-            var styledMap = new google.maps.StyledMapType(styles, {
-                name: 'Styled Map'
-            });
+                var styledMap = new google.maps.StyledMapType(styles, {
+                    name: 'Styled Map'
+                });
 
-            mapRef.mapTypes.set('map_style', styledMap);
-            mapRef.setMapTypeId('map_style');
+                mapRef.mapTypes.set('map_style', styledMap);
+                mapRef.setMapTypeId('map_style');
 
-            // Change text-center Position
-            if ($(window).width() > 767) {
-                if ($('html[dir="rtl"]').get(0)) {
-                    mapRef.panBy(250, 0);
-                } else {
-                    mapRef.panBy(-250, 0);
+                // Change text-center Position
+                if ($(window).width() > 767) {
+                    if ($('html[dir="rtl"]').get(0)) {
+                        mapRef.panBy(250, 0);
+                    } else {
+                        mapRef.panBy(-250, 0);
+                    }
                 }
             }
-        }
 
-        // Initialize Google Maps when element enter on browser view
-        theme.fn.intObs('.google-map', 'initializeGoogleMaps()', {});
+            // Initialize Google Maps when element enter on browser view
+            theme.fn.intObs('.google-map', 'initializeGoogleMaps()', {});
 
-        // Map text-center At
-        var mapCenterAt = function(options, e) {
-            e.preventDefault();
-            $('#googlemaps').gMap("centerAt", options);
-        }
-    </script>
-
+            // Map text-center At
+            var mapCenterAt = function(options, e) {
+                e.preventDefault();
+                $('#googlemaps').gMap("centerAt", options);
+            }
+        </script>
 
 
 
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"7247321acd3f6c8d","version":"2022.6.0","r":1,"token":"03fa3b9eb60b49789931c4694c153f9b","si":100}' crossorigin="anonymous"></script>
+
+        <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"7247321acd3f6c8d","version":"2022.6.0","r":1,"token":"03fa3b9eb60b49789931c4694c153f9b","si":100}' crossorigin="anonymous"></script>
 </body>
 
 <!-- Mirrored from www.okler.net/previews/porto/9.7.0/demo-one-page-agency.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Jul 2022 12:29:02 GMT -->
