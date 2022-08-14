@@ -1,6 +1,6 @@
 <?php
 
-class Event_Model extends CI_Model
+class Product_Model extends CI_Model
 {
     public function Insert_record($tablename, $data)
     {
@@ -30,21 +30,9 @@ class Event_Model extends CI_Model
         $query = "UPDATE nqash_cms.tblevent SET `Title`='$title',`EventDate`='$date',`Detail`='$detail' WHERE EventId='$id'";
         $this->db->query($query);
     }
-
-    public function edit_product_record($des,$xp,$p,$catid,$status,$pro_id)
-    {
-        $query = "UPDATE `tblproduct` SET `CategoryId`='$catid',`Description`='$des',`XPrice`='$xp',`Price`='$p',`Status`='$status' WHERE ProductId =$pro_id";
-        $this->db->query($query);
-    }
     public function fetch_record_detail($id)
     {
          $query = $this->db->query("SELECT * FROM nqash_cms.tbleventimage INNER JOIN nqash_cms.tblevent on tbleventimage.EventId=tblevent.EventId where tbleventimage.EventId='$id' order by tblevent.EventId desc ");
-        return $query->result_array();
-    }
-
-    public function fetch_record_detail_pro($id)
-    {
-         $query = $this->db->query("SELECT * FROM nqash_cms.tblproductimage INNER JOIN nqash_cms.tblproduct on tblproductimage.ProductId=tblproduct.ProductId where tblproductimage.ProductId='$id' order by tblproduct.ProductId desc ");
         return $query->result_array();
     }
     public function fetch_record()
@@ -94,11 +82,6 @@ class Event_Model extends CI_Model
     {
         $query = $this->db->query("SELECT * from $tablename where $where_column_name='$column_value'");
         return $query->result();
-    }
-    public function fetch_with_condition_arr($tablename,$where_column_name=0,$column_value)
-    {
-        $query = $this->db->query("SELECT * from $tablename where $where_column_name='$column_value'");
-        return $query->result_array();
     }
 
     public function Update_record($tablename, $columnname, $conditionvalue, $data)

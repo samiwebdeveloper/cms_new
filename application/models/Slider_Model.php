@@ -5,12 +5,19 @@ class Slider_Model extends CI_Model
     public function Insert_record($tablename, $data)
     {
         $this->db->insert($tablename, $data);
+        return $this->db->insert_id();
+        
     }
 
     public function fetch($tablename)
     {
         $query = $this->db->query("SELECT * from $tablename ");
         return $query->result();
+    }
+    public function fetch_arr($tablename)
+    {
+        $query = $this->db->query("SELECT * from $tablename ");
+        return $query->result_array();
     }
 
     public function fetch_with_condition($tablename,$where_column_name=0,$column_value)
@@ -22,6 +29,13 @@ class Slider_Model extends CI_Model
     {
      $query = $this->db->query("UPDATE nqash_cms.tblsliders SET `SliderDate`='$sliderdate',`StartDate`='$startdate',`EndDate`='$enddate',`Detail`='$detail',`Title`='$title',`Type`='$type',`Image`='$img_name' WHERE SliderId='$id'");
      return true;
+    }
+
+    public function edit_category_record($ParentId,$Category,$id)
+    {
+       
+        $query =  $this->db->query("UPDATE nqash_cms.tblcategory SET `ParentId`='$ParentId',`Category`='$Category' WHERE Categoryid='$id'");
+        return true;
     }
     public function Delete_record($tablename, $columnname, $conditionvalue)
 	{

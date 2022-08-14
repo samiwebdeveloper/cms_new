@@ -47,6 +47,15 @@ if ($_SESSION['user_name'] == "" && $_SESSION['portal'] != "ops") {
 					<a href="<?php echo base_url(); ?>slider_controller"  class="detailed">Add Slider</a>
 					<span class="icon-thumbnail">AS</span>
 				</li>
+				<li >
+					<a href="<?php echo base_url(); ?>add_product_category"  class="detailed">Add Product Category</a>
+					<span class="icon-thumbnail">APC</span>
+				</li>
+
+				<li >
+					<a href="<?php echo base_url(); ?>add_product"  class="detailed">Add Product</a>
+					<span class="icon-thumbnail">AP</span>
+				</li>
 
 				<li >
 					<a href="<?php echo base_url(); ?>event_controller" class="detailed">Add Event</a>
