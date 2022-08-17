@@ -47,6 +47,12 @@ class Event_Model extends CI_Model
          $query = $this->db->query("SELECT * FROM nqash_cms.tblproductimage INNER JOIN nqash_cms.tblproduct on tblproductimage.ProductId=tblproduct.ProductId where tblproductimage.ProductId='$id' order by tblproduct.ProductId desc ");
         return $query->result_array();
     }
+
+    public function fetch_record_detail_product_all()
+    {
+         $query = $this->db->query("SELECT * FROM nqash_cms.tblproductimage INNER JOIN nqash_cms.tblproduct on tblproductimage.ProductId=tblproduct.ProductId where status=1 GROUP by tblproductimage.ProductId order by tblproduct.ProductId desc");
+        return $query->result();
+    }
     public function fetch_record()
     {
         $query = $this->db->query("SELECT * FROM nqash_cms.tblevent ");

@@ -15,23 +15,11 @@ class Add_product extends CI_Controller
 
 	public function edit_master_detail()
 	{
-		// $id = $this->uri->segment(3);
-		// $data['data'] = $this->Event_Model->fetch_record_detail($id);
-		// $data['get_event_data'] = $this->Event_Model->get_event($id);
-		// $data['get_event_img_data'] = $this->Event_Model->event_img_data($id);
-		// $this->load->view('edit_product_view', $data);
-		
-		
 		$id = $this->uri->segment(3);
 		$data['data'] = $this->Event_Model->fetch_record_detail_pro($id);
 		$data['fetch_data_d'] = $this->Slider_Model->fetch_with_condition('nqash_cms.tblcategory','Parentid',0);
-
 		$data['get_event_data'] = $this->Event_Model->fetch_with_condition_arr('tblproduct','productid',$id);
 		$data['get_event_img_data'] = $this->Event_Model->fetch_with_condition_arr('tblproductimage','ProductId',$id);
-		// echo "<pre>";
-		// print_r ($data);
-		// echo "</pre>";
-		// exit;
 		$this->load->view('edit_product_view', $data);
 	}
 

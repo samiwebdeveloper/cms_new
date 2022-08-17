@@ -52,6 +52,7 @@
         gtag('config', 'UA-42715764-11');
     </script>
 
+
 </head>
 <style>
     .owl-carousel.dots-light .owl-dots .owl-dot.active span,
@@ -883,8 +884,8 @@
             <!-- gallery end -->
             <!-- project statrt -->
             <div role="main" class="main">
-                <div class="container" id="Projects">
-                    <div class="row align-items-cente page-header page-header-modern bg-color-light-scale-1 page-header-mdr">
+                <div class="container" id="Projects" >
+                    <!-- <div class="row align-items-cente page-header page-header-modern bg-color-light-scale-1 page-header-mdr">
                         <div class="col">
                             <div class="row">
                                 <div class="col-md-12 align-self-center p-static order-2 text-center">
@@ -894,45 +895,62 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <ul class="nav nav-pills sort-source sort-source-style-3 justify-content-center" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
+                    </div> -->
+                    <ul  class="nav nav-pills sort-source sort-source-style-3 justify-content-center" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
                         <li class="nav-item active" data-option-value="*"><a class="nav-link text-1 text-uppercase active" href="#">Show All</a></li>
-                        <li class="nav-item" data-option-value=".websites"><a class="nav-link text-1 text-uppercase" href="#">Websites</a></li>
-                        <li class="nav-item" data-option-value=".logos"><a class="nav-link text-1 text-uppercase" href="#">Logos</a></li>
-                        <li class="nav-item" data-option-value=".brands"><a class="nav-link text-1 text-uppercase" href="#">Brands</a></li>
-                        <li class="nav-item" data-option-value=".medias"><a class="nav-link text-1 text-uppercase" href="#">Medias</a></li>
+                        <?php 
+                        $row_parent_categpry=array_column($fetch_data_d,'Category','CategoryId');
+                        $category_arr=[];
+                         foreach ($fetch_product as $product) { 
+                            $category_arr[]=$product->CategoryId;                   
+                         }
+                         $category_unique=array_unique($category_arr);
+                         
+                        foreach ($category_unique as $category_value) {
+                         echo'<li class="nav-item" data-option-value=".'.$row_parent_categpry[$category_value].'"><a class="nav-link text-1 text-uppercase" href="#">'.$row_parent_categpry[$category_value].'</a></li>';
+                        }
+                        ?>
+                        <!-- <li class="nav-item" data-option-value=".websites"><a class="nav-link text-1 text-uppercase" href="#">Websites</a></li> -->
+                       
                     </ul>
 
                     <div class="sort-destination-loader sort-destination-loader-showing mt-4 pt-2 pb-3 mb-3">
                         <div class="row portfolio-list sort-destination popup-gallery-ajax" data-sort-id="portfolio">
                     <?php
-                     foreach ($fetch_project as $project) { 
-                        $ProjectId = $project->ProjectId;
-                        $Title = $project->Title;
-                        $Details = $project->Details;
-                        $OrganizationLogo = $project->OrganizationLogo;                     
+                //   $category_col=array_column($fetch_data_d,"CategoryId","Category");
+
+                     foreach ($fetch_product as $product) { 
+                        $ProductImageId = $product->ProductImageId;
+                        $ProductId = $product->ProductId;
+                        $Image = $product->Image;
+                        $Alternative = $product->Alternative;
+                        $Description = $product->Description;
+                        $CategoryId = $product->CategoryId;
+                        $XPrice = $product->XPrice;
+                        $Price = $product->Price;                     
                      ?>
                        
 
-                            <div class="col-sm-6 col-lg-3 isotope-item brands">
+                            <div class="col-sm-6 col-lg-3 isotope-item <?php echo  $row_parent_categpry[$CategoryId]?>">
                                 <div class="portfolio-item">
-                                    <a href="<?php echo base_url(); ?>product_detail" data-bs-toggle="modal" data-bs-target="#largeModal_<?php echo $ProjectId ?>">
+                                    <a href="<?php echo base_url(); ?>product_detail" data-bs-toggle="modal" data-bs-target="#largeModal_<?php echo $ProductId ?>">
                                         <span class="thumb-info thumb-info-lighten border-radius-0">
                                             <span class="thumb-info-wrapper border-radius-0">
-                                                <img src="<?php echo base_url() ?>assets/projects_images/<?php echo $OrganizationLogo ?>" class="img-fluid border-radius-0" alt="">
+                                                <img src="<?php echo base_url() ?>assets/upload_product/<?php echo $Image ?>" class="img-fluid border-radius-0" alt="">
                                                 <span class="thumb-info-title">
-                                                    <span class="thumb-info-inner"><?php echo $Title?></span>
-                                                    <span class="thumb-info-type"><?php echo "Type";?></span>
+                                                    <span class="thumb-info-inner"><?php echo $Alternative?></span>
+                                                    <span class="thumb-info-inner"> Rs.<?php echo $Price?></span>
+                                                    <span class="thumb-info-type"><?php echo  $row_parent_categpry[$CategoryId]?></span>
                                                 </span>
                                                 <span class="thumb-info-action">
-                                                    <span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
+                                                    <span class="thumb-info-action-icon bg-dark opacity-7"><i class="fas fa-plus"></i></span>
                                                 </span>
                                             </span>
                                         </span>
                                     </a>
                                 </div>
                             </div>
-                            <div class="modal fade" id="largeModal_<?php echo $ProjectId ?>" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="largeModal_<?php echo $ProductId ?>" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-xl">
                                     <div class="modal-content">
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
@@ -943,7 +961,7 @@
                                                         <div class="row">
                                                             <div class="col-md-12 align-self-center p-static order-2 text-center">
                                                                 <div class="overflow-hidden pb-2">
-                                                                    <h2 class="text-dark font-weight-bold text-7 mb-0"><?php echo $Title?></h2>
+                                                                    <h2 class="text-dark font-weight-bold text-7 mb-0"><?php echo $Description?></h2>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -959,13 +977,13 @@
                                                             <li class="social-icons-linkedin"><a href="https://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
                                                         </ul>
                                                         <hr>
-                                                        <img style="height:85% !important ;" src="<?php echo base_url() ?>assets/projects_images/<?php echo $OrganizationLogo ?>" class="img-fluid" alt="">
+                                                        <img style="height:85% !important ;" src="<?php echo base_url() ?>assets/upload_product/<?php echo $Image ?>" class="img-fluid" alt="">
 
                                                     </div>
                                                     <div class="col-sm-8">
                                                         <h2 class="text-color-dark font-weight-normal text-4 mb-0">Project <strong class="font-weight-extra-bold">Description</strong></h2>
 
-                                                        <p><?php echo $Details?></p>
+                                                        <p><?php echo $Description?></p>
                                                         <h2 class="text-color-dark font-weight-normal text-4 mb-0 mt-4">Project <strong class="font-weight-extra-bold">Details</strong></h2>
                                                         <ul class="list list-icons list-primary list-borders text-2">
                                                             <li><i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Client:</strong> Okler Themes</li>
