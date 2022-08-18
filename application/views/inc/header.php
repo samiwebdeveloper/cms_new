@@ -109,7 +109,7 @@ if ($_SESSION['user_name'] == "" && $_SESSION['portal'] != "ops") {
 					</button>
 					<div class="dropdown-menu dropdown-menu-right profile-dropdown" role="menu">
 						<a href="#" class="dropdown-item"><i class="pg-settings_small"></i> Settings</a>
-						<a href="<?php echo base_url(); ?>Login/logout" class="clearfix bg-master-lighter dropdown-item">
+						<a href="<?php echo base_url(); ?>" class="clearfix bg-master-lighter dropdown-item">
 							<span class="pull-left">Logout</span>
 							<span class="pull-right"><i class="pg-power"></i></span>
 						</a>

@@ -153,6 +153,8 @@ $this->load->view('inc/header');
 
 												<div class="col-md-9 my-3 form-floating">
 													<label for="validationTooltip01" class="form-label">Upload Slider Image</label>
+													<input type="file" class="form-control" name="file" accept=".png, .jpg, .jpeg" id="validationTooltip01" required>
+
 													<div class="valid-tooltip">Looks good!</div>
 													<div class="invalid-tooltip">This Field Is Required!</div>
 												</div>
